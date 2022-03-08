@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>StudentList</title>
+</head>
+<body>
+<h1>Hello, Welcome to student list</h1>
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Address</th>
+  </tr>
+  <tr th:each="student: ${studentList}">
+    <td th:text="${student.id}"></td>
+    <td th:text="${student.name}"></td>
+    <td th:text="${student.address}"></td>
+  </tr>
+  <tr>
+  </tr>
+</table>
+</body>
+</html>
