@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Add Student</title>
+<title>Update Student Form</title>
 </head>
 <body>
- <form th:action="@{/addStudent}" method = "POST" th:object = "${student}">
+<h1>Update Student Form</h1>
+<form th:action="@{/updateStudent}" method = "POST" th:object = "${student}">
+ <input  type = "text" th:field = "*{id}"hidden><br>
  <span>Student Name:</span>
  <input type = "text" th:field = "*{name}"><br>
   <span>Student Address:</span>

@@ -7,6 +7,13 @@
 <body>
 <h1>Welcome to sajiilocareer.com</h1>
 <a href="/listStudent"> List Student</a>
-<a href ="/addStudentForm"> Add Student</a>
+<a href ="/addStudentForm"> Add Student</a><br>
+
+<h1>Update Student Form</h1>
+<form th:action="@{/findByName}" method = "GET">
+ <span>Student Name:</span>
+ <input type = "text" name = "name"><br>
+ <button type = "submit"> Search Student</button>
+ </form>
 </body>
 </html>

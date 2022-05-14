@@ -27,5 +27,16 @@ public class StudentService {
 	public List<Student> getStudentList(){
 		return (List<Student>) this.studentDao.findAll();
 	}
-
+   
+	public Student findById(Integer id) {
+		return this.studentDao.findById(id).get();
+	}
+    
+	public void deleteById(Integer id) {
+    	this.studentDao.deleteById(id);
+    }
+	
+	public List<Student> findByName(String name){
+	return this.studentDao.findByName(name);
+}
 }

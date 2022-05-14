@@ -8,7 +8,7 @@ public class arrayDemo {
 	    {
 	        // Size of the
 	        // ArrayList
-	        int n = 5;
+	        int n = 20;
 	 
 	        // Declaring the ArrayList with
 	        // initial size n
@@ -24,6 +24,8 @@ public class arrayDemo {
 	 
 	        // Remove element at index 3
 	        arrli.remove(3);
+	        
+	        arrli.remove(12);
 	 
 	        // Displaying the ArrayList
 	        // after deletion
